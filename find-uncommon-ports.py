@@ -2,10 +2,9 @@ import subprocess
 
 db_portas_incomuns = []
 
-hosts = """
-google.com
+hosts = """google.com
 example.com
-"""
+teste.com.br"""
 
 hosts_array = hosts.split("\n")
 
