@@ -4,7 +4,7 @@
 # Tutorial de uso:
 
 1) Alterar a lista de hosts na linha 5:
-   - https://github.com/david-botelho-mariano/find-uncommon-ports/blob/7d97e1bd5e84f37edbe68d37888bea4370403596/find-uncommon-ports.py#L5
+   - https://github.com/david-botelho-mariano/find-uncommon-ports/blob/e2c344dbf9817bca8a2b4ec6309b46cd278cdc2a/find-uncommon-ports.py#L5
 
 2) Em seguida execute o comando no terminal: `python find-uncommon-ports.py`
 
