@@ -1,5 +1,6 @@
 # Find uncommon ports
 
+Essa ferramenta foi criada no intuito de percorrer uma lista de domínios e mostrar sempre que uma nova porta inédita for detectada, ou seja, só irá exibir se a número da porta não tiver aparecido antes, ideal para detectar portas incomuns, visto que portas repetidas são ignoradas.
 
 # Tutorial de uso:
 
