@@ -1,11 +1,28 @@
-resultado_array = resultado.split("\n")
+import subprocess
 
-simple_database = []
+db_portas_incomuns = []
 
-for linha in resultado_array:
+hosts = """
+google.com
+example.com
+"""
 
-  if "open" in linha and linha not in simple_database:
-    simple_database.append(linha)
+hosts_array = hosts.split("\n")
 
-for row in simple_database:
-  print(row)
+for dominio in hosts_array:
+
+  try:
+
+    resultado = subprocess.run(["nmap", dominio], capture_output=True).stdout.decode()
+    
+    resultado_filtrado = resultado.split("SERVICE")[1].split("Nmap done")[0]
+
+    for porta in resultado_filtrado.split("\n"):          
+
+      if porta.split("/")[0] not in db_portas_incomuns and "open" in porta:
+
+        print(dominio, porta)
+        db_portas_incomuns.append(porta.split("/")[0])
+
+  except Exception as erro:      
+    pass 
