@@ -2,8 +2,9 @@
 
 
 # Tutorial de uso:
-1) Modificar a lista de host na linha 25:
-   - https://github.com/david-botelho-mariano/api-key-leak-analyzer/blob/648130ff75b1edeeb549d1f602bee4eb6fa40fd8/api-key-leak-analyzer.py#L25
+
+1) Alterar a lista de hosts na linha 5:
+   - https://github.com/david-botelho-mariano/find-uncommon-ports/blob/7d97e1bd5e84f37edbe68d37888bea4370403596/find-uncommon-ports.py#L5
 
 2) Em seguida execute o comando no terminal: `python find-uncommon-ports.py`
 
