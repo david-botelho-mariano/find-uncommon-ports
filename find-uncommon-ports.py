@@ -4,7 +4,7 @@ db_portas_incomuns = []
 
 hosts = """google.com
 example.com
-teste.com.br"""
+vulnerable.com.br"""
 
 hosts_array = hosts.split("\n")
 
